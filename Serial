@@ -1,0 +1,33 @@
+byte incomingByte;
+
+void setup(){
+
+Serial.begin(9600);
+
+for (byte i = 0; i <= sizeof(row); i++) { pinMode(row[i], OUTPUT);
+
+} for (byte i=0; i<= sizeof(col); i++){ }
+
+pinMode(col[i], OUTPUT);
+
+pinMode(2, INPUT PULLUP);}
+
+void loop()
+
+{
+
+if (Serial.available() > 0){ incomingByte = Serial.read();
+
+}
+
+if(incomingByte == 'c')
+
+showPattern(circle);
+
+else if(incomingByte == 'H')
+
+showPattern(H);
+
+else if (incomingByte == 'A')
+
+showPattern(A);}
